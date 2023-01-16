@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+ <style>
+	h2 {text-align: center;} 
+	 
+	 
+ </style>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Add Employee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+</head>
+ 
+<body>
+	
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+		<!-- Brand -->
+		<a class="navbar-brand" href="#">Employee Management System</a>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    	<div class="navbar-nav">
+		
+		<a class="navbar-item  nav-link " href="#">Employee Management </a>
+	
+					
+	</nav>
+           
+    <div class="container my-5">
+        
+        <div class="card">
+            <div class="card-body">
+				<h2 class="card-title"> Update Employee</h2>
+                <div class="col-md-10">
+                    <form action="#" th:action="@{/updateEmployee}" th:object="${employee}"
+                                                                       method="post">
+                        <div class="row">
+                            <div class="form-group col-md-8">
+                                <label for=" name" class="col-form-label">Employee First Name</label> 
+                                <input type="text" th:field="*{firstName}" class="form-control"
+                                            id="firstName" name ="name" required
+                                             placeholder="Enter First Name" />
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="name" class="col-form-label">Employee Last Name</label> 
+                                <input type="text" th:field="*{lastName}" class="form-control"
+                                            id="lastName" name ="name" required
+                                            placeholder="Enter Last Name" />
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="email" class="col-form-label">Employee Email</label> 
+                                <input type="email" th:field="*{email}" class="form-control"
+                                            id="email" email ="email" required
+                                            placeholder=" Enter Email" />
+                            </div>
+                            
+ 
+                            <div class="col-md-6">
+                                <input type="submit" class="btn btn-primary" value=" Submit ">
+                            </div>
+ 
+                            <input type="hidden" id="id" th:field="*{id}">
+     
+                        </div>
+                    </form>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+ 
+</html>

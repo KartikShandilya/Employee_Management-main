@@ -1,0 +1,42 @@
+{"properties": [
+  {
+    "name": "info.project.name",
+    "type": "java.lang.String",
+    "description": "A description for 'info.project.name'"
+  },
+  {
+    "name": "info.project.team",
+    "type": "java.lang.String",
+    "description": "A description for 'info.project.team'"
+  },
+  {
+    "name": "info.project.instructor",
+    "type": "java.lang.String",
+    "description": "A description for 'info.project.instructor'"
+  },
+  {
+    "name": "info.project.env",
+    "type": "java.lang.String",
+    "description": "A description for 'info.project.env'"
+  },
+  {
+    "name": "management.endpoints.web.exposure.include",
+    "type": "java.lang.String",
+    "description": "A description for 'management.endpoints.web.exposure.include'"
+  },
+  {
+    "name": "info.project.name",
+    "type": "java.lang.String",
+    "description": "A description for 'info.project.name'"
+  },
+  {
+    "name": "info.project.team",
+    "type": "java.lang.String",
+    "description": "A description for 'info.project.team'"
+  },
+  {
+    "name": "info.project.name",
+    "type": "java.lang.String",
+    "description": "A description for 'info.project.name'"
+  }
+]}
